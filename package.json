@@ -1,0 +1,22 @@
+{
+  "name": "actividad2node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jujusp/Actividad2Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jujusp/Actividad2Node/issues"
+  },
+  "homepage": "https://github.com/Jujusp/Actividad2Node#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
