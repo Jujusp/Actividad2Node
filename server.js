@@ -37,13 +37,13 @@ const server = http.createServer(async function (req, res) {
                 proveedoresData.reduce((previousValue, currentValue) => {
                     return (
                         previousValue +
-                        '<tr><th scope="row">' +
-                        currentValue.idproveedor +
-                        '</th><td>' +
-                        currentValue.nombrecompania +
-                        '</td><td>' +
-                        currentValue.nombrecontacto +
-                        '</td></tr>'
+                        `<tr><th scope="row">
+                        ${currentValue.idproveedor}
+                        </th><td>
+                        ${currentValue.nombrecompania} 
+                        </td><td>
+                        ${currentValue.nombrecontacto} 
+                        </td></tr>`
                     )
                 }, '')
             )
@@ -59,13 +59,13 @@ const server = http.createServer(async function (req, res) {
                 clientesData.reduce((previousValue, currentValue) => {
                     return (
                         previousValue +
-                        '<tr><th scope="row">' +
-                        currentValue.idCliente +
-                        '</th><td>' +
-                        currentValue.NombreCompania +
-                        '</td><td>' +
-                        currentValue.NombreCompania +
-                        '</td></tr>'
+                        `<tr><th scope="row">
+                        ${currentValue.idCliente}
+                        </th><td>
+                        ${currentValue.NombreCompania} 
+                        </td><td>
+                        ${currentValue.NombreContacto} 
+                        </td></tr>`
                     )
                 }, '')
             )
