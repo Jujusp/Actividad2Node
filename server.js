@@ -23,8 +23,10 @@ const server = http.createServer(async function (req, res) {
     res.statusCode = 200
     switch (req.url) {
         case '/':
-            res.setHeader('Content-Type', 'text/plain')
-            res.end('Hola Mundo')
+            res.setHeader('Content-Type', 'text/html')
+            res.end(
+                '<a href="/api/proveedores">Proveedores</a><br><a href="/api/clientes">Clientes</a>'
+            )
             break
         case '/api/proveedores':
             const proveedoresData = await fetch(proveedoresLink)
